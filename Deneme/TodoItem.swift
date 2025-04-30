@@ -1,14 +1,15 @@
 import Foundation
 import CoreData
 
-@objc(TodoItem)
-public class TodoItem: NSManagedObject {
-    @NSManaged public var title: String?
-    @NSManaged public var createdAt: Date?
-}
-
 extension TodoItem {
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<TodoItem> {
-        return NSFetchRequest<TodoItem>(entityName: "TodoItem")
+    static func create(in context: NSManagedObjectContext, title: String, notes: String? = nil, dueDate: Date? = nil, priority: Int16 = 0) -> TodoItem {
+        let item = TodoItem(context: context)
+        item.title = title
+        item.notes = notes
+        item.dueDate = dueDate
+        item.priority = priority
+        item.createdAt = Date()
+        item.isCompleted = false
+        return item
     }
-} 
+}
