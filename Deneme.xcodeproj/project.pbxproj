@@ -14,7 +14,7 @@
 		6D5F21242DB57A3300210379 /* Exceptions for "Deneme" folder in "Deneme" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				"Supporting Files/Info.plist",
 			);
 			target = 6D5F210E2DB57A3100210379 /* Deneme */;
 		};
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6L5C5XTZ2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Deneme/Info.plist;
+				INFOPLIST_FILE = "Deneme/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -175,7 +175,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6L5C5XTZ2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Deneme/Info.plist;
+				INFOPLIST_FILE = "Deneme/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
